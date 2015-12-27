@@ -5,6 +5,9 @@
 # Helpfull to replay the building process.
 #
 
+echo "this is not a valid script yet, DONOT RUN!"
+exit 1
+
 su - sylvain
 # already cloned git
 cd ucoin-debian-package
@@ -16,6 +19,7 @@ export DEBEMAIL="sylvain@opensource-expert.com"
 # create versioned package containing floder
 mkdir $ucoinp
 cd $ucoinp
+# not native
 dh_make --native
 
 #Type of package: single binary, indep binary, multiple binary, library, kernel module, kernel patch?
